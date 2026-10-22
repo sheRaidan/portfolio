@@ -1,0 +1,118 @@
+:root{
+    --bg1: #301560;
+    --bg2: #8F64DC;
+    --secondary: #421C85;
+    --text: #88CADC;
+    --acc: #CEE24B;
+    --border: #43ADCA;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.6rem;
+    font-family: "Bree Serif", serif;
+    background: var(--bg1);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 5px 30px 5px 30px;
+    column-gap: 5px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    letter-spacing: 0.02em;
+}
+h1{
+    font-size: 6rem;
+}
+h2{
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+p{
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600;
+}
+.textbox{
+    background: var(--secondary);
+    /* color: var(--bg1); */
+    padding: 15px;
+    border: 2px solid var(--bg2);
+    /* outline: 5px solid var(--border); */
+    border-radius: 15px / 51.96px;
+    corner-shape: bevel;
+    text-align: left;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    max-height: fit-content;
+}
+
+header{
+    grid-column: span 12;
+    text-align: center;
+    background-image: url("img/graphics/header.svg");
+    background-size: 100%;
+    background-position: center;
+    margin: -5px -30px 0 -30px;
+}
+
+.spacer{
+    /* grid-column: span 12; */
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
+
+.project{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    transition: all 0.2s;
+    background: url("img/graphics/Rectangle\ 3.png");
+    background-size: 0%;
+    background-repeat: repeat-y;
+}
+.project:hover{
+    background-size: 100%;
+    color: var(--bg1);
+    transform: skew(-15deg);
+    padding-left: 60px;
+    border-left: 30px solid var(--bg2);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.left{
+    grid-column-start: 3;
+    grid-column-end: 10;
+}
+.right{
+    grid-column-end: 11;
+}
+
+#links{
+    width: 50vw;
+    text-align: right;
+    margin-top: -2.5em;
+    margin-left: 49vw;
+}
+#links *{
+    display: inline;
+    padding-left: 10px;
+}
+#name{
+    width: 50vw;
+    padding-left: 1vw;
+    text-align: left;
+}
+#projects{
+    grid-column-start: 3;
+    border-bottom: 5px solid var(--text);
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
